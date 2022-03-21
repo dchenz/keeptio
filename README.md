@@ -1,6 +1,6 @@
 # Keeptio
 
-Keeptio is a little project I've been working on in my spare time. Always been interested in encryption software, especially password managers, so I wanted to try making one in JavaFX. Still a work in progress and not the best code design either. 
+Keeptio is a little password manager project I've been working on in my spare time. Always been interested in encryption software and related tools, hence I made this using JavaFX. Still a work in progress and not the cleanest code design either. 
 
 ## Current features
 
@@ -15,7 +15,9 @@ Keeptio is a little project I've been working on in my spare time. Always been i
 - Backing up vaults and vault changes to cloud storage (can see some of it already in Vault Settings)
 - Changing vault password and encryption settings
 - CRUD operations on groups
-- and more...
+- Hierarchy of groups similar to a file system
+- TOTP token generation (MFA)
+- and other common features seen in password managers
 
 ## Demo
 
