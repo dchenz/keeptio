@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<StackPane fx:id="windowWrapper" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="mainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0">
+         <left>
+            <VBox prefWidth="250.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TreeView fx:id="itemTreeView" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox alignment="CENTER_RIGHT" styleClass="kpt-padding-outer" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="homeToolbarButton" layoutX="889.0" layoutY="15.0" mnemonicParsing="false" styleClass="toolbar-button">
+                     <graphic>
+                        <FontIcon iconLiteral="bi-house-door" />
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Return home" />
+                     </tooltip>
+                  </Button>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button fx:id="newEntryToolbarButton" mnemonicParsing="false" styleClass="toolbar-button">
+                     <graphic>
+                        <FontIcon iconLiteral="bi-file-earmark-lock" />
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Add a new secret" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="newGroupToolbarButton" mnemonicParsing="false" styleClass="toolbar-button">
+                     <graphic>
+                        <FontIcon iconLiteral="bi-window" />
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Create a new group" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="settingsToolbarButton" mnemonicParsing="false" styleClass="toolbar-button">
+                     <graphic>
+                        <FontIcon iconLiteral="bi-gear" />
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Settings" />
+                     </tooltip>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <ScrollPane hbarPolicy="NEVER" BorderPane.alignment="CENTER">
+               <content>
+                  <StackPane fx:id="contentView" alignment="TOP_LEFT" prefHeight="550.0" prefWidth="800.0" />
+               </content>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

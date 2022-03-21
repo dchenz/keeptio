@@ -1,0 +1,22 @@
+.pw-rule-label {
+	-fx-font-size: 12;
+}
+
+.pw-rule-status-success {
+	-fx-text-fill: #00bb00;
+}
+
+.pw-rule-status-fail {
+	-fx-text-fill: #000000;
+}
+
+.pw-rule-status-fail .ikonli-font-icon {
+	-fx-icon-color: #000000;
+	-fx-icon-code: "bi-slash-circle";
+}
+
+.pw-rule-status-success .ikonli-font-icon {
+	-fx-icon-color: #00bb00;
+	-fx-icon-code: "bi-check-circle";
+}
+

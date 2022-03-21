@@ -1,0 +1,71 @@
+@font-face {
+	src: url("Roboto-Regular.ttf");
+}
+
+.root {
+	-fx-font-size: 14;
+	-fx-font-family: "Roboto";
+}
+
+.kpt-heading-1 {
+	-fx-font-size: 18;
+	-fx-font-weight: bold;
+	-fx-padding: 0 0 7.5 0;
+}
+
+.kpt-heading-2 {
+	-fx-font-size: 16;
+	-fx-padding: 0 0 5 0;
+}
+
+.kpt-padding-outer {
+	-fx-padding: 5 15 5 15;
+	-fx-spacing: 7.5;
+}
+
+.kpt-padding-inner {
+	-fx-spacing: 7.5;
+}
+
+.kpt-gridpane {
+	-fx-vgap: 10;
+	-fx-hgap: 10;
+}
+
+.kpt-gridpane .kpt-grid-row {
+	-fx-max-height: 70;
+	
+}
+
+.kpt-error-message {
+	-fx-font-size: 12;
+	-fx-text-fill: #ff0000;
+}
+
+.kpt-confirm-modal-container {
+	-fx-background-color: rgba(0, 0, 0, 0.3);
+}
+
+.kpt-confirm-modal {
+	-fx-background-color: #ffffff;
+	-fx-border-color: #000000;
+	-fx-border-width: 1;
+}
+
+.kpt-confirm-modal .kpt-confirm-title {
+	-fx-font-size: 24;
+}
+
+.kpt-confirm-modal .kpt-confirm-caption {
+	-fx-font-size: 20;
+}
+
+.kpt-confirm-button {
+	-fx-font-size: 16;
+	-fx-cursor: hand;
+}
+
+.kpt-confirm-button .ikonli-font-icon {
+	-fx-icon-size: 36;
+}
+

@@ -1,0 +1,31 @@
+.homepage-title {
+	-fx-font-family: Consolas;
+	-fx-font-weight: bold;
+	-fx-font-size: 24;
+	-fx-padding: 0 6 0 6;
+}
+
+.branding {
+
+}
+
+.row-button {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+	-fx-background-radius: 8;
+	-fx-border-color: lightgrey;
+	-fx-border-width: 2;
+	-fx-pref-width: 200;
+	-fx-font-size: 16;
+	-fx-cursor: hand;
+	-fx-alignment: center-left;
+}
+
+.row-button .button-container {
+	-fx-alignment: center;
+	-fx-pref-width: 50;
+}
+
+.button-container .ikonli-font-icon {
+	-fx-icon-color: grey;
+	-fx-margin: 0 10 0 0;
+}

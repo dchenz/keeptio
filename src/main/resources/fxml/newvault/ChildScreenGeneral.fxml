@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox prefHeight="550.0" prefWidth="750.0" styleClass="kpt-padding-outer" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane styleClass="kpt-gridpane">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints vgrow="SOMETIMES" />
+          <RowConstraints vgrow="SOMETIMES" />
+          <RowConstraints vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="kpt-heading-1" text="General" />
+            <VBox styleClass="kpt-padding-inner" GridPane.rowIndex="1">
+               <children>
+                  <Label styleClass="kpt-heading-2" text="Database name" />
+                  <TextField fx:id="dbNameField" promptText="Enter name" />
+               </children>
+            </VBox>
+            <VBox styleClass="kpt-padding-inner" GridPane.rowIndex="2">
+               <children>
+                  <Label styleClass="kpt-heading-2" text="File location" />
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Label fx:id="savePathField">
+                           <graphic>
+                              <Button fx:id="browseDirectoryButton" mnemonicParsing="false" text="Browse" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

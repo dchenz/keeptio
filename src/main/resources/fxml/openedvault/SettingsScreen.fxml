@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.keeptio.components.PasswordToggleField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="600.0" prefWidth="1000.0" styleClass="kpt-padding-outer" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="550.0" styleClass="kpt-padding-inner">
+         <children>
+            <TabPane prefHeight="500.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Password">
+                  <content>
+                        <VBox styleClass="kpt-padding-outer">
+                           <children>
+                              <Label styleClass="kpt-heading-1" text="Change password" />
+                              <GridPane styleClass="kpt-gridpane">
+                                <columnConstraints>
+                                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label styleClass="kpt-heading-2" text="Enter current password" />
+                                    <PasswordToggleField GridPane.columnIndex="1" />
+                                    <Label styleClass="kpt-heading-2" text="Enter new password" GridPane.rowIndex="1" />
+                                    <PasswordToggleField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label styleClass="kpt-heading-2" text="Confirm new password" GridPane.rowIndex="2" />
+                                    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                  </content>
+                </Tab>
+                <Tab text="Encryption">
+                  <content>
+                        <VBox styleClass="kpt-padding-outer">
+                           <children>
+                              <GridPane styleClass="kpt-gridpane">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label styleClass="kpt-heading-2" text="Symmetric cipher" />
+                                    <Label styleClass="kpt-heading-2" text="Hash algorithm" GridPane.columnIndex="1" />
+                                    <Label styleClass="kpt-heading-2" text="PBKDF2 rounds" GridPane.columnIndex="2" />
+                                    <ChoiceBox prefWidth="150.0" GridPane.rowIndex="1" />
+                                    <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <GridPane layoutX="25.0" layoutY="15.0" styleClass="kpt-gridpane">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label styleClass="kpt-heading-2" text="Enter current password" />
+                                    <PasswordToggleField GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                  </content>
+                </Tab>
+                  <Tab text="Backup">
+                     <content>
+                        <VBox alignment="CENTER" styleClass="kpt-padding-outer">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../media/google.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </VBox>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <Button fx:id="cancelButton" cancelButton="true" mnemonicParsing="false" text="Cancel" />
+            <Button fx:id="createButton" defaultButton="true" mnemonicParsing="false" styleClass="primary" text="Create" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</VBox>

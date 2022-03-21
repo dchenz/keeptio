@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox prefHeight="550.0" prefWidth="750.0" styleClass="kpt-padding-outer" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane styleClass="kpt-gridpane">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints vgrow="SOMETIMES" />
+          <RowConstraints vgrow="SOMETIMES" />
+          <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="kpt-heading-1" text="Encryption" />
+            <VBox styleClass="kpt-padding-inner" GridPane.rowIndex="1">
+               <children>
+                  <Label styleClass="kpt-heading-2" text="Cipher algorithm" />
+                  <ChoiceBox fx:id="cipherDropdown" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox styleClass="kpt-padding-inner" GridPane.rowIndex="2">
+               <children>
+                  <Label styleClass="kpt-heading-2" text="Hash algorithm" />
+                  <ChoiceBox fx:id="hashDropdown" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox styleClass="kpt-padding-inner" GridPane.rowIndex="3">
+               <children>
+                  <Label styleClass="kpt-heading-2" text="PBKDF rounds" />
+                  <TextField fx:id="pbkdfRoundsField" />
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</VBox>
