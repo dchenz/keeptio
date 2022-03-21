@@ -1,8 +1,6 @@
 package com.keeptio.util;
 
-import java.io.IOException;
 import java.io.OutputStream;
-import java.util.Date;
 
 import javafx.beans.property.Property;
 
@@ -23,15 +21,15 @@ public class Logging {
 	}
 
 	private static void writeMessage(OutputStream out, String message) {
-		try {
-			Date now = new Date();
-			out.write(now.toString().getBytes());
-			out.write(" - ".getBytes());
-			out.write(message.getBytes());
-			out.write('\n');
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			Date now = new Date();
+//			out.write(now.toString().getBytes());
+//			out.write(" - ".getBytes());
+//			out.write(message.getBytes());
+//			out.write('\n');
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	}
 
 }
